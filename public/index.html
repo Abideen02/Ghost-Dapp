@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost.Horde</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"
+  />
+</head>
+
+<body class="bg-black muli">
+    <nav class="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black">
+        <div class="flex justify-between">
+            <a href="#" class="flex items-center p-2 mr-4 no-underline">
+                <img class="max-h-l2 w-auto" src="https://cdn-icons-png.flaticon.com/512/6515/6515396.png" />
+            </a>
+            <a data-toggle="toggle-nav" data-target="#nav-items" href="#"
+                class="flex items-center ml-auto md-hidden indigo-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
+                <i data-feather="menu"></i>
+            </a>
+        </div>
+        <div class="container-fluid">
+            <span class="navbar-brand m-0 h4 fw-bold">GHOST.HORDE</span>
+            <span class="nav-link border rounded-pill bg-light">
+              <span id="balance">0</span>
+              cUSD ------- CUSD ACCOUNT BALANCE 
+            </span>
+          </div>
+    </nav>
+    <section id="home" class="min-h-100vh flex justify-start items-center">
+        <div class="mx-5 md-mx-l5">
+            <div>
+                <h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900 "> QUALITY. STYLE. GHOST.<br /> FABULOUS FASHION.</h1>
+            </div>
+        </div>
+    </section>
+      <div class="alert alert-warning sticky-top mt-2" role="alert">
+        <span id="notification">⌛ LOADING, PLEASE WAIT...</span>
+      </div>
+
+      <div class="mb-4" style="margin-top: 4em">
+        <a
+          class="btn btn-dark rounded-pill"
+          data-bs-toggle="modal"
+          data-bs-target="#addModal"
+        >
+          ADD GHOST PRODUCT
+        </a>
+      </div>
+
+      <main id="marketplace" class="row"></main>
+    </div>
+
+    <div
+    class="modal fade"
+    id="addModal"
+    tabindex="-1"
+    aria-labelledby="newProductModalLabel"
+    aria-hidden="true">
+
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <div class="modal-header">
+          <h5 class="modal-title" id="newProductModalLabel">ADD NEW GHOST PRODUCT </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="col">
+                  <input
+                    type="text"
+                    id="newProductName"
+                    class="form-control mb-2"
+                    placeholder="ENTER GHOST PRODUCT NAME "
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    id="newImgUrl"
+                    class="form-control mb-2"
+                    placeholder="ENTER GHOST PRODUCT IMAGE URL "
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    id="newProductDescription"
+                    class="form-control mb-2"
+                    placeholder="ENTER GHOST PRODUCT DESCRIPTION"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    id="newLocation"
+                    class="form-control mb-2"
+                    placeholder="ENTER GHOST PRODUCT LOCATION"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    id="newPrice"
+                    class="form-control mb-2"
+                    placeholder="ENTER GHOST PRODUCT PRICE"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-light border"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-bs-dismiss="modal"
+              id="newProductBtn"
+            >
+            ADD NEW GHOST PRODUCT
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Modal-->
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"
+    ></script>
